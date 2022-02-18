@@ -10,6 +10,47 @@
 
 <h2>Products Page</h2>
 
+<table>
+  <tr>
+    <th>Product name</th>
+    <th>ProductID</th>
+    <th>Product Price</th>
+    <th>description</th>
+    <th>Manufacturer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Sumatra</td>
+    <td>1</td>
+    <td>$20</td>
+    <td>coffee bean with Sumatra origin</td>
+    <td>Starbucks</td>
+    <td><button type="button" onclick="alert('more stuff in progress')">edit</button>
+         <button type="button" onclick="alert('more stuff in progress')">delete</button></td>
+  </tr>
+  <tr>
+   <td>blue coffee</td>
+    <td>2</td>
+    <td>$15</td>
+    <td>house blend</td>
+    <td>Blutbottle</td>
+     <td><button type="button" onclick="alert('more stuff in progress')">edit</button>
+         <button type="button" onclick="alert('more stuff in progress')">delete</button></td>
+  </tr>
+  <tr>
+    <td>Melozio</td>
+    <td>3</td>
+    <td>$30</td>
+    <td>columbia coffee beans</td>
+    <td>Nespresso</td>
+    <td><button type="button" onclick="alert('more stuff in progress')">edit</button>
+         <button type="button" onclick="alert('more stuff in progress')">delete</button></td>
+  </tr>
+
+</table>
+
+
+<h3> add a new product</h3>
 <form>
     <label>Enter information for the Product below: </label>
     
@@ -36,13 +77,20 @@
     <br>
         
     <label for="manufacturer">Manufacturer: </label>
-    <input type="text" id="manufacturer" name="manufacturer">
+    <select name="manuf" id="manuf">
+    <option value="Starbucks">Starbucks</option>
+    <option value="Deathwith">Deathwish</option>
+    <option value="Nes">Nespresso</option>
+    <option value="a">Stumptown</option>
+  </select>
+  <br><br>
 
     <br>
 
     <input type="submit"></input>
 
 </form>
+
 
 
 </body>

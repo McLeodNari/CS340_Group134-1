@@ -11,12 +11,8 @@
 <h2>Manufacturers Page</h2>
 
 <form>
-    <label>Enter information for the Manufacturers below: </label>
+    <label>Create a new Manufacturer below: </label>
     
-    <br>
-    
-    <label for="manufacturerID">manufacturerID: </label>
-    <input type="text" id="manufacturerID" name="manufacturerID">
     
     <br>
 
@@ -26,7 +22,7 @@
     <br>
         
     <label for="productList">Product List: </label>
-    <input type="text" id="productList" name="productList">
+    <input placeholder="NULL for new manufacturers "type="text" id="productList" name="productList">
 
     <br>
 
@@ -34,6 +30,72 @@
 
 </form>
 
+<form>
+    <label>Recieve a Manufacturer below: </label>
+
+    <br>
+
+    <label for="manufacturerID">manufacturerID: </label>
+
+    <select name="manufacturerID" id="manufacturerID">
+        <option value="preset1">001</option>
+        <option value="preset2">002</option>
+        <option value="preset3">003</option>
+    </select>
+    
+    <br>
+
+    <input type="submit"></input>
+
+</form>
+
+<form>
+    <label>Update a Manufacturer below: </label>
+    
+    <br>
+
+    <label for="manufacturerID">manufacturerID: </label>
+
+    <select name="manufacturerID" id="manufacturerID">
+        <option value="preset1">001</option>
+        <option value="preset2">002</option>
+        <option value="preset3">003</option>
+    </select>
+    
+    <br>
+
+    <label for="manufacturerName">Manufacturer Name: </label>
+    <input type="text" id="manufacturerName" name="manufacturerName">
+
+    <br>
+        
+    <label for="productList">Product List: </label>
+    <input placeholder="NULL for new manufacturers "type="text" id="productList" name="productList">
+
+    <br>
+
+    <input type="submit"></input>
+
+</form>
+
+<form>
+    <label>Delete a Manufacturer below: </label>
+    
+    <br>
+
+    <label for="manufacturerID">manufacturerID: </label>
+
+    <select name="manufacturerID" id="manufacturerID">
+        <option value="preset1">001</option>
+        <option value="preset2">002</option>
+        <option value="preset3">003</option>
+    </select>
+    
+    <br>
+
+    <input type="submit"></input>
+
+</form>
 
 </body>
 </html>

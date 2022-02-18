@@ -10,92 +10,57 @@
 
 <h2>Manufacturers Page</h2>
 
-<form>
-    <label>Create a new Manufacturer below: </label>
-    
-    
-    <br>
+<table>
+  <tr>
+    <th>ManufacturerID</th>
+    <th>Manufacturer Name</th>
+    <th>Product List</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Starbucks</td>
+    <td></td>
+    <td><button type="button" onclick="alert('more stuff in progress')">edit</button>
+         <button type="button" onclick="alert('more stuff in progress')">delete</button></td>
+  </tr>
+  <tr>
+   <td>11</td>
+    <td>Nespresso</td>
+    <td></td>
+     <td><button type="button" onclick="alert('more stuff in progress')">edit</button>
+         <button type="button" onclick="alert('more stuff in progress')">delete</button></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Stumptown</td>
+    <td></td>
+    <td><button type="button" onclick="alert('more stuff in progress')">edit</button>
+         <button type="button" onclick="alert('more stuff in progress')">delete</button></td>
+  </tr>
 
+</table>
+
+<h3> add a manufacturer</h3>
+<form>
     <label for="manufacturerName">Manufacturer Name: </label>
     <input type="text" id="manufacturerName" name="manufacturerName">
 
-    <br>
-        
-    <label for="productList">Product List: </label>
-    <input placeholder="NULL for new manufacturers "type="text" id="productList" name="productList">
-
-    <br>
-
     <input type="submit"></input>
 
 </form>
 
-<form>
-    <label>Recieve a Manufacturer below: </label>
+<h3> search product list from a manufacturer</h3>
+<label for="manufacturer">Manufacturer: </label>
+    <select name="manuf" id="manuf">
+    <option value="Starbucks">Starbucks</option>
+    <option value="Deathwith">Deathwish</option>
+    <option value="Nes">Nespresso</option>
+    <option value="a">Stumptown</option>
+  </select>
+<button type="button" onclick="alert('fake list')">search</button>
 
-    <br>
 
-    <label for="manufacturerID">manufacturerID: </label>
-
-    <select name="manufacturerID" id="manufacturerID">
-        <option value="preset1">001</option>
-        <option value="preset2">002</option>
-        <option value="preset3">003</option>
-    </select>
-    
-    <br>
-
-    <input type="submit"></input>
-
-</form>
-
-<form>
-    <label>Update a Manufacturer below: </label>
-    
-    <br>
-
-    <label for="manufacturerID">manufacturerID: </label>
-
-    <select name="manufacturerID" id="manufacturerID">
-        <option value="preset1">001</option>
-        <option value="preset2">002</option>
-        <option value="preset3">003</option>
-    </select>
-    
-    <br>
-
-    <label for="manufacturerName">Manufacturer Name: </label>
-    <input type="text" id="manufacturerName" name="manufacturerName">
-
-    <br>
-        
-    <label for="productList">Product List: </label>
-    <input placeholder="NULL for new manufacturers "type="text" id="productList" name="productList">
-
-    <br>
-
-    <input type="submit"></input>
-
-</form>
-
-<form>
-    <label>Delete a Manufacturer below: </label>
-    
-    <br>
-
-    <label for="manufacturerID">manufacturerID: </label>
-
-    <select name="manufacturerID" id="manufacturerID">
-        <option value="preset1">001</option>
-        <option value="preset2">002</option>
-        <option value="preset3">003</option>
-    </select>
-    
-    <br>
-
-    <input type="submit"></input>
-
-</form>
 
 </body>
 </html>

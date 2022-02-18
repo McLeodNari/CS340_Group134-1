@@ -11,13 +11,20 @@
 <h2>Customers Page</h2>
 
 <form>
-    <label>Enter information for the Customer below: </label>
+    <label>Enter information for a new Customer below: </label>
     
     <br>
     
     <label for="customerID">customerID: </label>
     <input type="text" id="customerID" name="customerID">
-    
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
     <br>
 
     <label for="email">Email: </label>
@@ -36,7 +43,7 @@
     <br>
         
     <label for="orderHistory">Order History: </label>
-    <input type="text" id="orderHistory" name="orderHistory">
+    <input placeholder="NULL for new customers" type="text" id="orderHistory" name="orderHistory">
 
     <br>
 
@@ -44,6 +51,106 @@
 
 </form>
 
+<form>
+    <label>Edit information for a Customer below: </label>
+    
+    <br>
+    
+    <label for="customerID">customerID: </label>
+
+    <select name="customerID" id="customerID">
+        <option value="preset1">001</option>
+        <option value="preset2">002</option>
+        <option value="preset3">003</option>
+    </select>
+    
+    <br>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email">
+
+    <br>
+        
+    <label for="lastName">Last Name: </label>
+    <input type="text" id="lastName" name="lastName">
+
+    <br>
+        
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName" name="firstName">
+
+    <br>
+        
+    <label for="orderHistory">orderHistory: </label>
+
+    <select name="orderHistory" id="orderHistory">
+        <option value="presetOrder1">Order History 001</option>
+        <option value="presetOrder2">Order History 002</option>
+        <option value="presetOrder3">Order History 003</option>
+    </select>
+
+    <br>
+
+    <input type="submit"></input>
+
+</form>
+
+<form>
+    <label>Receive information for  Customer below: </label>
+    
+    <br>
+    
+    <label for="customerID">customerID: </label>
+
+    <select name="customerID" id="customerID">
+        <option value="preset1">001</option>
+        <option value="preset2">002</option>
+        <option value="preset3">003</option>
+    </select>
+    <br>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email">
+
+    <br>
+        
+    <label for="lastName">Last Name: </label>
+    <input type="text" id="lastName" name="lastName">
+
+    <br>
+        
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName" name="firstName">
+
+    <br>
+        
+    <label for="orderHistory">Order History: </label>
+    <input placeholder="NULL for new cusotmers" type="text" id="orderHistory" name="orderHistory">
+
+    <br>
+
+    <input type="submit"></input>
+
+</form>
+
+<form>
+    <label>Delete a Customer below: </label>
+    
+    <br>
+    
+    <label for="customerID">customerID: </label>
+
+    <select name="customerID" id="customerID">
+        <option value="preset1">001</option>
+        <option value="preset2">002</option>
+        <option value="preset3">003</option>
+    </select>
+    
+    <br>
+
+    <input type="submit"></input>
+
+</form>
 
 </body>
 </html>
